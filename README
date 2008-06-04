@@ -1,0 +1,22 @@
+# 手順
+
+  1. 鉄道データをダウンロードしてくる
+
+    以下のページからたどって、
+    http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-N02-v1_1.html
+    N02-07.xml というファイルを取ってくる(時期によっては新しいバージョンの物があるかもしれない)
+
+  2. 変換処理の実行
+
+    # 以下のコマンドを実行
+    rake
+
+  3. テスト
+
+    # 以下のコマンドを実行
+    rake test
+
+# メモ
+
+  curve データの扱いが微妙で、現状 rail_stations と rail_load_sections テーブルの curve カラムに yaml 形式で突っ込んでる
+

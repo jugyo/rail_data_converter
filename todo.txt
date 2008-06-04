@@ -1,0 +1,4 @@
+rename column station_name => name
+add relations もしくは rail_station に curve のデータを持たせてしまってもよいかも知れない
+
+
