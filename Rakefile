@@ -6,7 +6,7 @@ task "test" => ["init_db"] do
 end
 
 task "dist" => ["init_db"] do
-  sh "./convert.rb N02-07.xml"
+  sh "./convert.rb rail_data.xml"
   sh "./convert_curve_data.rb"
 end
 
